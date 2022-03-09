@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <header>To Do List</header>
+        <div id = "content"> 
+            <div id = "projects">
+                <div id = "projects-title"> Projects </div>
+                <div id = "projects-list">
+                </div>
+                <div id="add-project-button">
+                    + Add Project
+                </div>
+                <form id="add-project-form">
+                    <input type="text" id="name" class="form-input" name="project-name", placeholder="Name of project" required>
+                    <div class = "buttons">
+                        <input type="submit" id="project-confirm-button" value="confirm">
+                        <input type="button" id="project-cancel-button" value="cancel">
+                    </div>
+                </form>
+            </div>
+            <div id = "project">
+                <div id = "project-panel">
+                    <div id = "project-name"></div>
+                    <div id = "delete-project-button">Delete Project</div> 
+                </div>
+                <div id = "todo-list">    
+                </div>
+                <div id="add-todo-button">
+                    <image class = "add-image"></image>
+                    Add to do
+                </div>
+                <form id="add-todo-form">
+                    <input type = "text" id = "title" class = "form-input" name = "title" placeholder="Title of todo" required>
+                    <input type = "text" id = "description" class = "form-input" name ="description" placeholder = "A short description" >
+                    <div class = "selectors">
+                        <input type = "date" id = "due-date" class = "form-input" name = "due-date" placeholder = "Due Date">
+                        <select id="priority" name="priority">
+                            <option selected="true" disabled value = "none">Select priority</option>
+                            <option value = "low">low</option>
+                            <option value = "medium">medium</option>
+                            <option value= "high">high</option>
+                        </select>
+                    </div>
+                    <div class="buttons">
+                    <input type = "submit" id = "confirm-button" value = "Confirm">
+                    <input type = "button" id = "cancel-button" value = "Cancel">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

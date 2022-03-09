@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+header {
+    font-size: 50px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 800;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #947360;
+    border-bottom: #5e070a solid 3px;
+    color: white;
+    padding-left: 20px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+#project{
+    width: 75%;
+    padding: 40px;
+}
+
+#todo-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.todo{
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    background-color: #A1AFA0;
+    width: 100%;
+    border-radius:  10px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#project-name{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    width: 80%;
+}
+
+.project-name-editable:hover{
+    border: solid 1px black;
+}
+
+.project-name-editable:focus {
+    border: solid 1px black;
+}
+
+#title,
+.todo-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#add-todo-button:hover{
+    color: gray;
+}
+
+#add-todo-form{
+    display: none;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F7EDD0;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.tick-image{
+    width: 50px;
+    height: auto;
+    filter: brightness(100%);
+    border-radius: 50%;
+    opacity: 0%;
+}
+
+.tick-image:hover{
+    opacity: 30%;
+}
+
+.tick-image-checked{
+    opacity: 100%;
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+.todo-details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-selectors{
+    display:flex;
+    gap: 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+input{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+}
+
+option{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.delete-button{
+    width: 30px;
+}
+
+.delete-button:hover{
+    filter:contrast(0.2);
+}
+
+#add-todo-button{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.add-image{
+    width: 40px;
+    transition: transform 1s;
+}
+
+.add-image:hover{
+    transform: rotate(90deg);
+}
+
+#confirm-button{
+    width: 80px;
+}
+
+#projects {
+    background-color: #970C10;
+    width: 20%;
+    border-right: solid #5e070a 3px;
+    color: white;
+    padding-top: 10px;
+    height: 100%;
+}
+
+#projects-title{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+#name {
+    font-size: 18px;
+    width: 80%;
+}
+
+#add-project-form{
+    padding-top: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+#add-project-button{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+}
+
+#project-confirm-button{
+    width: 30%;
+}
+
+#add-project-button:hover{
+    color: rgb(184, 164, 52);
+}
+.projects-list-item{
+    padding: 10px 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;
+    width: 100%;
+    border-top:#160202 1px solid;
+    border-bottom: #160202 1px solid;
+    box-sizing: border-box;
+}
+
+.projects-list-item:hover{
+    background-color: rgba(255,255,255, 0.2);
+}
+
+#projects-list{
+    margin-top: 20px;
+}
+
+.selected-project {
+    background-color: rgba(0,0,0, 0.2);
+}
+
+#project-panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#delete-project-button{
+    font-family: 'Fredoka', 'sans-serif';
+    background-color: #970C10;
+    color: white;
+    font-size: 32px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#delete-project-button:hover{
+    background-color:#5e070a;
+}
+
+#delete-project-button:active{
+    background-color: #330506;
+}
