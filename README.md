@@ -1,1 +1,2 @@
-#todo-list
+# todo-list
+A simple application which allows you to create projects and track the tasks that have be completed for each project. Developed with HTML, CSS, Javascript, and Webpack, using an event aggregator design pattern. Check it out [here!](https://caleblyx.github.io/todo-list/dist/index)
